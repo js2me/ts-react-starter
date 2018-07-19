@@ -1,0 +1,15 @@
+{
+    "extends": [
+      "tslint:latest",
+      "tslint-config-prettier",
+      "tslint-eslint-rules",
+      "tslint-react"
+    ],
+    "rules":{
+      "indent": [true, "spaces", 2],
+      "jsx-equals-spacing": ["always"],
+      "no-submodule-imports": false,
+      "semicolon":false,
+      "jsx-indent": [true, "spaces", 2]
+    }
+  }
