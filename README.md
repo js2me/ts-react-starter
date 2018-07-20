@@ -1,6 +1,5 @@
-# MOBA GAME on React, Redux & TypeScript
+# TypeScript + React + Redux
 
-Simple example and boilerplate on wonderful stack!
 
 ## Contains
 
@@ -9,7 +8,6 @@ Simple example and boilerplate on wonderful stack!
 - [x] [Redux](https://github.com/reactjs/redux) 3.7
 - [x] [React Router](https://github.com/ReactTraining/react-router) 4.2
 - [x] [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
-- [x] [TodoMVC example](http://todomvc.com)
 
 ### Build tools
 
