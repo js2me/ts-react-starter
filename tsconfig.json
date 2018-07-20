@@ -17,7 +17,11 @@
       "es6",
       "es7",
       "dom"
-    ]
+    ],
+    "baseUrl":".",
+    "paths": {
+      "~/*" :["./src/*"]
+    },
   },
   "exclude": [
     "dist",

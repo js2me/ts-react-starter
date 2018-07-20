@@ -1,15 +1,29 @@
 {
     "extends": [
       "tslint:latest",
-      "tslint-config-prettier",
       "tslint-eslint-rules",
-      "tslint-react"
+      "tslint-react",
+      "tslint-plugin-prettier"
     ],
     "rules":{
+      "prettier": [true, {"semi": false, "singleQuote":true}],
       "indent": [true, "spaces", 2],
+      "ter-indent": [true, 2],
+      "no-extra-semi": true,
+      "quotemark": [true, "single", "jsx-double"],
+      "semicolon": false,
       "jsx-equals-spacing": ["always"],
       "no-submodule-imports": false,
-      "semicolon":false,
-      "jsx-indent": [true, "spaces", 2]
+      "no-implicit-dependencies": [ true, ["~"] ],
+      "whitespace": [true, "check-module"],
+      "no-unnecessary-semicolons": true,
+      "ordered-imports": [
+        true,
+        {
+          "grouped-imports": true
+        }
+      ],
+      "jsx-no-multiline-js":false,
+      "trailing-comma": false,
     }
   }

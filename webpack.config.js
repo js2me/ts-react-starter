@@ -7,7 +7,6 @@ const isProduction = process.argv.indexOf('-p') >= 0;
 const outPath = Path.join(__dirname, './dist');
 const sourcePath = Path.join(__dirname, './src');
 
-const baseUrl =  isProduction ? 'https://js2me.github.io/opendota-webclient/' : '/';
 module.exports = {
   context: sourcePath,
   entry: {
@@ -22,7 +21,7 @@ module.exports = {
   },
   output: {
     path: outPath,
-    publicPath: baseUrl,
+    publicPath: '/',
     filename: '[name].bundle.js',
     chunkFilename: '[name].bundle.chunk.js',
   },
@@ -31,7 +30,10 @@ module.exports = {
     extensions: ['.js', '.ts', '.tsx'],
     // Fix webpack's default behavior to not load packages with jsnext:main module
     // https://github.com/Microsoft/TypeScript/issues/11677
-    mainFields: ['browser', 'main']
+    mainFields: ['browser', 'main'],
+    alias: {
+      "~": sourcePath
+    },
   },
   module: {
     loaders: [
